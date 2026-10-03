@@ -1,0 +1,6 @@
+node_modules
+.next
+.checks
+resources
+public/images
+package-lock.json
