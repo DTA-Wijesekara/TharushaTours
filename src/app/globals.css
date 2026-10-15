@@ -1514,6 +1514,86 @@ svg {
   }
 }
 
+/* Customer journeys: retain the full photos and welcome sign. */
+.journeys {
+  background: #eeefe8;
+}
+.journeys-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 64px;
+}
+.journey-card {
+  margin: 0;
+  min-width: 0;
+}
+.journey-photo {
+  background: #dfe3d8;
+}
+.journey-photo > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.journey-photo-airport-welcome > img {
+  max-height: 580px;
+  object-fit: contain;
+}
+.journey-caption {
+  padding-top: 24px;
+}
+.journey-caption .small-caption {
+  color: #657157;
+  font-size: 8px;
+}
+.journey-caption h3 {
+  font-size: 30px;
+  margin: 10px 0 13px;
+  max-width: 400px;
+}
+.journey-caption > p:last-child {
+  font-size: 12px;
+  color: #616b61;
+  max-width: 440px;
+  line-height: 1.85;
+}
+.journeys-invitation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-top: 44px;
+  padding-top: 26px;
+  border-top: 1px solid #d2d6c9;
+}
+.journeys-invitation > p {
+  font-family: var(--serif);
+  font-size: 23px;
+  font-style: italic;
+}
+@media (max-width: 850px) {
+  .journeys-grid {
+    gap: 30px;
+  }
+}
+@media (max-width: 640px) {
+  .journeys-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .journey-caption h3 {
+    font-size: 28px;
+  }
+  .journeys-invitation {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .journeys-invitation > p {
+    font-size: 21px;
+  }
+}
+
 /* Vehicle photography and driving atmosphere */
 .service-image {
   position: relative;

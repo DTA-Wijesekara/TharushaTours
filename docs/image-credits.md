@@ -1,5 +1,18 @@
 # Image sources
 
+## Customer journey photographs
+
+Added from user-supplied files on 15 October 2026. The user confirmed that both photos show Tharusha’s customers. Originals are preserved under `tours/`; the website uses resized WebP copies without changing their composition.
+
+| Local file                                    | Source              |
+| --------------------------------------------- | ------------------- |
+| `public/images/journeys/airport-welcome.webp` | `tours/tour 1.png`  |
+| `public/images/journeys/scenic-train.webp`    | `tours/tour 2.jpeg` |
+
+Prepare these assets with `node scripts/prepare-journeys.mjs`. Titles and captions are editable in `src/content/journeys.ts`. No dates, reviews, customer names or specific transport arrangements have been inferred.
+
+## Destination and brand imagery
+
 Downloaded on 4 October 2026. Images are stored locally as optimised WebP assets. Photography illustrates destinations; it does not depict Tharusha, his vehicles or his past customers.
 
 | Local file                    | Photographer                | Source                                                                                                                           | Licence                                           |

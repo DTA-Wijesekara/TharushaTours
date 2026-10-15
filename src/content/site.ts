@@ -17,6 +17,7 @@ export const navigation = [
   { label: "Our services", href: "#services" },
   { label: "Discover Sri Lanka", href: "#discover" },
   { label: "Meet Tharusha", href: "#about" },
+  { label: "Our journeys", href: "#journeys" },
   { label: "Your ride", href: "#vehicles" },
 ] as const;
 

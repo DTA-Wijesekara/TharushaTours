@@ -40,6 +40,7 @@ try {
       "services",
       "discover",
       "about",
+      "journeys",
       "vehicles",
       "contact",
     ])
@@ -106,7 +107,7 @@ try {
     assert.deepEqual(errors, [], "No browser runtime errors");
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.screenshot({ path: `.checks/preview-${viewport.width}.png` });
-    for (const section of ["services", "vehicles"]) {
+    for (const section of ["services", "vehicles", "journeys"]) {
       await page
         .locator(`#${section}`)
         .screenshot({ path: `.checks/${section}-${viewport.width}.png` });
